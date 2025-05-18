@@ -1,0 +1,500 @@
+#app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style for a more visible focus for all clickable/tabable elements to enhance accessibility */
+input:focus, 
+label:focus, 
+a:focus, 
+select:focus, 
+button:focus, 
+textarea:focus {
+  outline: 2px dashed rgb(224, 223, 223);
+}
+
+.project-image-anchor:focus, 
+.project-title-anchor:focus {
+  outline-offset: 2px;
+}
+
+.show-hide-button:focus {
+  outline-offset: 3px;
+  opacity: 1;
+  z-index: 900; /* Added z-index to ensure focus outline shows. */
+}
+
+.hamburger:focus {
+  outline-offset: 12px;
+}
+
+/* HEADER */
+
+/* HAMBURGER MENU */
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 1000; /* Highest z-index to always be visible. */
+}
+
+/* Hamburger menu lines. */
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+/* Hamburger Icon Animation - toggle to X */
+#menu-toggle:checked ~ .hamburger span:nth-child(1) {
+  transform: rotate(47deg) translate(4px, 4px);
+}
+#menu-toggle:checked ~ .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked ~ .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -9px);
+}
+
+/* NAVIGATION MENU */
+
+/* Toggle Menu Visibility */
+#menu-toggle:checked ~ #navbar {
+  right: 0;
+  visibility: visible;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 25px;
+  margin: 0;
+  top: 0;
+  right: -100%;
+  visibility: hidden;
+  z-index: 999; /* 1 lower than hamburger menu & higher than focused items */
+  background-color: black;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Smooth out scroll behaviors from nav links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.25rem; /* 100px */
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 5rem;
+  padding-inline: 1.25rem;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro-title {
+  font-size: 6rem;
+  margin: 0;
+}
+
+#intro-text {
+  font-size: 2rem;
+}
+
+#intro-link {
+  background-color: aliceblue;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 12.5rem; /* 200px */
+}
+
+/* Dividing line between sections. */
+hr.rounded {
+  width: 100%;
+  border-top: 8px solid rgb(224, 223, 223);
+  border-radius: 5px;
+  margin-block: 3rem;
+}
+
+#skills-title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#skills-text {
+  font-size: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 288px;
+  row-gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-item img {
+  /* width + height of 200px */
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.skill-item p {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+}
+
+#project-section-title {
+  font-size: 4rem;
+  margin-block: 25px;
+}
+
+#select-menu-container {
+  font-size: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+#order-select {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: 70vw;
+  grid-auto-rows: 43.75rem; /* 700px; */
+  row-gap: 100px;
+}
+
+
+.project-grid-reversed {
+  animation: fadein 1s linear;
+}
+
+
+.project-tile, .project-tile-hidden {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 0;
+  margin: 0;
+  border: 3px solid gray;
+}
+
+.project-tile {
+  height: 43.75rem; /* 700px; */
+}
+
+.project-tile-hidden {
+  height: 30.625rem; /* 490px; */
+}
+
+.project-image, .show-hide-button { 
+  width: 100%;
+}
+
+.project-image {
+  display: flex;
+  height: 24.0625rem; /* 385px; */
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: transform 0.5s ease-out;
+  transform-origin: bottom right;
+}
+
+/* Underline animation when project title or project image are hovered over. */
+.project-image-anchor:hover ~ .project-title-anchor .project-title .hover-underline-animation::after,
+.project-title-anchor:hover .hover-underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2px;
+  width: calc(100% - 4px);
+  outline: 2px solid white;
+  font-size: 1.75rem;
+  background-color: black;
+  color: white;
+  height: 4.375rem; /* 70px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.show-hide-button {
+  text-align: left;
+  color: white;
+  background-color: rgb(52, 58, 70);
+  border: 2px solid white;
+  opacity: .5;
+  cursor: pointer;
+  height: 2.1875rem; /* 35px; */
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.project-description {
+  height: 13.125rem; /* 210px; */
+  margin: 0;
+  border: 2px solid white;
+  font-size: 0.875rem;
+  white-space: pre-line;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 3%;
+  text-align: justify;
+  background-color: black;
+  animation: fadein 1s linear;
+}
+
+.project-description-hidden {
+  height: 0; 
+  visibility: hidden; 
+  overflow: hidden; 
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+#footer-title {
+  font-size: 4rem;
+  margin-block: 25px;
+}
+
+#footer-text {
+  font-size: 2rem;
+  margin-block: 0 25px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 50px;
+}
+
+#email-error-container {
+  margin-block: 5px;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ee4540;
+  margin-inline-start: 5px;
+}
+
+#email-error {
+  background: #ee4540;
+  margin-block: 0;
+  padding-inline-start: 5px;
+}
+
+input:focus:invalid, 
+textarea:focus:invalid, 
+.invalid-input:focus {
+  outline: 2px dashed rgb(192, 17, 17);
+}
+
+#submit-button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+/* 1295px */
+@media screen and (max-width: 80.938rem) {
+  .skills-list {
+    column-gap: 200px;
+  }
+}
+
+/* 1050px */
+@media screen and (max-width: 65.625rem) {
+  #skills-title {
+    font-size: 3rem;
+  }
+  
+  #skills-text {
+    font-size: 1.5rem;
+  }
+  
+  .skill-item p {
+    font-size: 2rem;
+  }
+}
+
+/* 900px */
+@media screen and (max-width: 56.25rem) {
+  #intro-title {
+    font-size: 4rem;
+  }
+  
+  #intro-text {
+    font-size: 1.5rem;
+  }
+
+  #footer-title {
+    font-size: 3rem;
+    margin-block: 0 25px;
+  }
+  
+  #footer-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* 800px - Tablet View */
+@media screen and (max-width: 50rem) {
+  #navbar {
+    justify-content: center;
+  }
+
+  #footer-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* 600px - Mobile View */
+@media screen and (max-width: 37.5rem) {
+  html {
+    scroll-padding-top: 9.375rem; /* 150px; adjusted for mobile nav menu. */
+  }
+
+  .hamburger {
+    top: 20px;
+  }
+
+  .hamburger span {
+    outline: 1px solid black;
+  }
+
+  #navbar {
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .nav-link {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+    border: 1px solid white;
+  }
+
+  #header {
+    padding-block-start: 8rem; /* 128px; */
+   }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-section-title {
+    font-size: 3rem;
+  }
+
+  #project-grid {
+    grid-template-columns: 90vw;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  #footer {
+    width: 90vw;
+  }
+
+  #footer-title {
+    font-size: 2rem;
+  }
+  
+  #footer-text {
+    font-size: 1rem;
+  }
+}
