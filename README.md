@@ -1,8 +1,3 @@
-# React + Vite
+# Web Dev Portfolio for Josh Willis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This site is a static one-page portfolio site used to house my work from 2023 - present, built using React. Development of the site will be ongoing and I will update it throughout my career as a developer.
