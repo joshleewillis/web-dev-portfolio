@@ -70,22 +70,22 @@ export default function Header() {
 
           <div className="skills-list">
             <div className="skill-item">
-              <img src="/assets/Logo_Images/html_logo.png" alt="HTML5 Logo" />
+              <img src="./assets/Logo_Images/html_logo.png" alt="HTML5 Logo" />
               <p>HTML5</p>
             </div>
 
             <div className="skill-item">
-              <img src="/assets/Logo_Images/css_logo.png" alt="CSS3 Logo" />
+              <img src="./assets/Logo_Images/css_logo.png" alt="CSS3 Logo" />
               <p>CSS3</p>
             </div>
 
             <div className="skill-item">
-              <img src="/assets/Logo_Images/JavaScript_logo.png" alt="JavaScript Logo" />
+              <img src="./assets/Logo_Images/JavaScript_logo.png" alt="JavaScript Logo" />
               <p>JavaScript</p>
             </div>
 
             <div className="skill-item">
-              <img src="/assets/Logo_Images/react.svg" alt="React Logo" />
+              <img src="./assets/Logo_Images/react.svg" alt="React Logo" />
               <p>React</p>
             </div>
           </div>
