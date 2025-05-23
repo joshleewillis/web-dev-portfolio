@@ -2,7 +2,7 @@ const projectArray = [
   {
     id: 0,
     link:'https://codepen.io/joshleewillis/full/qEWRjzN',
-    src: './assets/Project-Screenshots/8.25+5Clock.PNG',
+    src: `${process.env.PUBLIC_URL}/assets/Project-Screenshots/8.25+5Clock.PNG`,
     title: '25 + 5 Clock',
     description: `The 25 + 5 clock was the last project that I made for the FreeCodeCamp Front End Development Libraries course. The purpose of this app is a productivity clock for users. They can set the time for their work and break sessions. When the time is up for the work session, the timer alarm goes off and the break session starts automatically. When the break ends, the alarm goes off, starting the work session and resetting the cycle. Users can reset the cycle at any time by clicking the reset button, which will stop the timer and revert the session and break times back to 25 and 5, respectively.
 
