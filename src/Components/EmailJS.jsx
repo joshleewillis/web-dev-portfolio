@@ -76,7 +76,8 @@ export default function ContactEmail() {
       <label htmlFor="name-input">Name:</label>
       <input 
         type="text" 
-        id="name-input" 
+        id="name-input"
+        className="form-elements"
         name="name" 
         placeholder="Your first and last name" 
         onChange={handleFormChange} 
@@ -87,7 +88,7 @@ export default function ContactEmail() {
       <input 
         type="email" 
         id="email-input"
-        className={!isValid ? "invalid-input" : ""} 
+        className={!isValid ? "invalid-input form-elements" : "form-elements"}
         name="email" 
         value={email} 
         onChange={handleEmailChange} 
@@ -104,6 +105,7 @@ export default function ContactEmail() {
       <input 
         type="text" 
         id="organization-input" 
+        className="form-elements"
         name="organization" 
         onChange={handleFormChange} 
         required 
@@ -113,6 +115,7 @@ export default function ContactEmail() {
       <input 
         type="text" 
         id="subject-input" 
+        className="form-elements"
         name="subject" 
         onChange={handleFormChange} 
         required 
@@ -121,6 +124,7 @@ export default function ContactEmail() {
       <label htmlFor="contact-message">Message:</label>
       <textarea 
         id="contact-message" 
+        className="form-elements"
         name="message" 
         placeholder="Start typing your message here..." 
         rows="4" 
@@ -129,7 +133,12 @@ export default function ContactEmail() {
         required
       >
       </textarea>
-      <button type="submit" id="submit-button" value="Send">
+      <button 
+        type="submit" 
+        id="submit-button" 
+        className="form-elements" 
+        value="Send"
+      >
         Send
       </button>
     </form>

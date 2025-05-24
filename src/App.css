@@ -355,6 +355,12 @@ a {
   padding-block-end: 50px;
 }
 
+.form-elements {
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border: 2px solid rgb(133, 133, 133);
+}
+
 #email-error-container {
   margin-block: 5px;
 }
@@ -383,6 +389,7 @@ textarea:focus:invalid,
 #submit-button {
   font-size: 1rem;
   cursor: pointer;
+  margin-block-start: 10px;
 }
 
 /* MEDIA QUERIES */
