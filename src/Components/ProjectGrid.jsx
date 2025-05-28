@@ -11,7 +11,7 @@ export default function ProjectGrid() {
   const toggleExpanded = (projectId) => {
     setExpandedProjects((prevState) => ({
       ...prevState,
-      [projectId]: !prevState[projectId], // Toggle the expanded state for the specific project.
+      [projectId]: !prevState[projectId] // Toggle the expanded state for the specific project.
     }));
   };
 
