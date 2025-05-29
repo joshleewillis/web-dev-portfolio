@@ -163,11 +163,7 @@ hr.rounded {
 
 #skills-title {
   font-size: 4rem;
-  margin: 0;
-}
-
-#skills-text {
-  font-size: 2rem;
+  margin-block: 0 1rem;
 }
 
 .skills-list {
@@ -403,11 +399,7 @@ textarea:focus:invalid,
 /* 1050px */
 @media screen and (max-width: 65.625rem) {
   #skills-title {
-    font-size: 3rem;
-  }
-  
-  #skills-text {
-    font-size: 1.5rem;
+    text-align: center;
   }
   
   .skill-item p {
@@ -475,6 +467,10 @@ textarea:focus:invalid,
   #header {
     padding-block-start: 8rem; /* 128px; */
    }
+
+   #skills-title {
+    font-size: 3rem;
+  }
 
   .skills-list {
     flex-direction: column;

@@ -66,7 +66,6 @@ export default function Header() {
 
         <div id="skills">
           <h2 id="skills-title">My Skills:</h2>
-          <p id="skills-text">These are the technologies and tools I frequently work with:</p>
 
           <div className="skills-list">
             <div className="skill-item">
