@@ -472,6 +472,11 @@ textarea:focus:invalid,
     padding-block-start: 8rem; /* 128px; */
    }
 
+   #intro {
+    align-items: center;
+    text-align: center;
+   }
+
    #skills-title {
     font-size: 3rem;
   }
