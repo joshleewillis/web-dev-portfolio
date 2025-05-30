@@ -150,7 +150,11 @@ html {
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1rem;
-  width: 12.5rem; /* 200px */
+  width: 13rem; /* 208px */
+}
+
+.arrow-icon {
+  padding-left: 8px;
 }
 
 /* Dividing line between sections. */
