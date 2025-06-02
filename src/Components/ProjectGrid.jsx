@@ -67,10 +67,11 @@ export default function ProjectGrid() {
 
                   <div className="list-container">
                     <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Project Purpose/Function</li>
+                      <li>What I learned</li>
+                      <li>Technologies used:</li>
+                      <li>Link to project/source code</li>
+                      <li>Click 'Show Description' below for a more in-depth description of the project and my process for making it.</li>
                     </ul>
                   </div>
                 </div>
