@@ -284,8 +284,7 @@ hr.rounded {
   transform-origin: bottom right;
 }
 
-/* Underline animation when project title or project image are hovered over. */
-.project-image-anchor:hover ~ .project-title-anchor .project-title .hover-underline-animation::after,
+/* Underline animation when project title is hovered over. */
 .project-title-anchor:hover .hover-underline-animation::after {
   transform: scaleX(1);
   transform-origin: bottom left;
