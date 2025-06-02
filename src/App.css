@@ -245,11 +245,11 @@ hr.rounded {
   height: 30.625rem; /* 490px; */
 }
 
-.project-image {
+.project-image-anchor {
   width: 50%;
 }
 
-.show-hide-button { 
+.show-hide-button, .project-image { 
   width: 100%;
 }
 
