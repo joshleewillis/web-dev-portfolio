@@ -58,20 +58,22 @@ export default function ProjectGrid() {
                 className={expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
                 key={project.id}
               >
-                <a 
-                  className="project-image-anchor" 
-                  href={project.link} 
-                  aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
-                  title={"Go to: " + project.title + " Project (opens in a new tab)"}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+                <div className="image-and-list-container">
                   <img 
                     src={project.src} 
                     className="project-image" 
                     alt={project.title + " Project Screenshot"} 
                   />
-                </a>
+
+                  <div className="list-container">
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
     
                 <a 
                   className="project-title-anchor" 

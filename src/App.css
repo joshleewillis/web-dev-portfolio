@@ -245,17 +245,25 @@ hr.rounded {
   height: 30.625rem; /* 490px; */
 }
 
-.project-image-anchor {
-  width: 50%;
-}
-
-.show-hide-button, .project-image { 
-  width: 100%;
+.image-and-list-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .project-image {
+  width: 50%;
   display: flex;
   height: 24.0625rem; /* 385px; */
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-hide-button { 
+  width: 100%;
 }
 
 .hover-underline-animation {
