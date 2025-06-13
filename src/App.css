@@ -260,8 +260,22 @@ hr.rounded {
   display: flex;
   align-items: center;
   justify-content: center;
+
   box-sizing: border-box;
   padding: 1%;
+
+  font-size: 1rem;
+  overflow: auto;
+  background-color: black;
+  
+  
+  
+  /*
+  text-align: justify;
+  margin: 0;
+  border: 2px solid white;
+  white-space: pre-line;
+  */
 }
 
 .show-hide-button { 
