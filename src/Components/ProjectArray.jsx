@@ -4,8 +4,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/qEWRjzN',
     src: './assets/Project-Screenshots/8.25+5Clock.PNG',
     purpose: 'Productivity clock to time work sessions and breaks.',
-    lessons: `Managing and displaying time in various formats, advanced interconnected state, expanded knowledge on nested conditions, conditional ternary statements, useEffect and useRef hooks to update DOM elements, and font awesome
-    `,
+    lessons: 'Managing and displaying time in various formats, advanced interconnected state, expanded knowledge on nested conditions, conditional ternary statements, useEffect and useRef hooks to update DOM elements, and font awesome',
     technologies: 'HTML, CSS, JavaScript, and React',
     title: '25 + 5 Clock',
     description: `The 25 + 5 clock was the last project that I made for the FreeCodeCamp Front End Development Libraries course. The purpose of this app is a productivity clock for users. They can set the time for their work and break sessions. When the time is up for the work session, the timer alarm goes off and the break session starts automatically. When the break ends, the alarm goes off, starting the work session and resetting the cycle. Users can reset the cycle at any time by clicking the reset button, which will stop the timer and revert the session and break times back to 25 and 5, respectively.
@@ -26,7 +25,7 @@ const projectArray = [
     link: 'https://codepen.io/joshleewillis/full/GRbVoEy',
     src: './assets/Project-Screenshots/7.JavaScriptCalculator.PNG', 
     purpose: 'Calculator App',
-    lessons: `Improved understanding of React state, complex Boolean logic, nested conditions, handling edge cases, the includes method, and expanded knowledge of the map method for dynamically mapping buttons to the grid`,
+    lessons: 'Improved understanding of React state, complex Boolean logic, nested conditions, handling edge cases, the includes method, and expanded knowledge of the map method for dynamically mapping buttons to the grid',
     technologies: 'HTML, CSS, JavaScript, and React',
     title: 'JavaScript Calculator', 
     description: `I continued the FreeCodeCamp Front End Development Libraries course with the JavaScript Calculator project. This project saw me use React to create a fully functional calculator app with the basic operators: add, subtract, multiply, and divide. Users can enter decimal numbers, do chain operations of any size, and clear the screen. There were a number of tests that the project had to pass in order to be submitted, and I discuss below some of the most challenging tests and how I overcame them.
@@ -51,7 +50,7 @@ const projectArray = [
     link: 'https://codepen.io/joshleewillis/full/ZEdoaYw',
     src: './assets/Project-Screenshots/6.DrumMachine.PNG',
     purpose: 'Virtual midi drum machine pad',
-    lessons: `Mapping a button grid, audio and checkbox elements, the replace method, keydown events, and preventing memory leaks with useEffect`,
+    lessons: 'Mapping a button grid, audio and checkbox elements, the replace method, keydown events, and preventing memory leaks with useEffect',
     technologies: 'HTML, CSS, JavaScript, and React', 
     title: 'Drum Machine', 
     description: `I created this project with React to continue the FreeCodeCamp Front End Development Libraries course. It emulates a midi drum machine pad, complete with nine buttons with different sounds, a power switch, volume bar, and display screen. When users press the buttons on the pad or type the letter for any button, a sound is played and the name of the sound displays on the screen. Volume can be adjusted on the bar, and the screen will also display the current volume when it is changed. Turning the power switch off stops all sound from the buttons.
@@ -72,7 +71,7 @@ const projectArray = [
     link: 'https://codepen.io/joshleewillis/full/yLdPLvX',
     src: './assets/Project-Screenshots/5.MarkdownPreviewer.PNG', 
     purpose: 'Markdown text editor with style preview that updates as users type.',
-    lessons: `Markdown, Marked JS Library, helper functions, and expanding on the fundamentals of React`,
+    lessons: 'Markdown, Marked JS Library, helper functions, and expanding on the fundamentals of React',
     technologies: 'HTML, CSS, JavaScript, and React',
     title: 'Markdown Previewer', 
     description: `After familiarizing myself with the basics of React, I continued working on the projects for the FreeCodeCamp Front End Development Libraries course with the Markdown Previewer. I also used the Marked JS Library on this project. This program allows users to write GitHub flavored markdown text into a text editor, and see the results in the preview as they type. 
@@ -89,7 +88,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/yLdggwY',
     src: './assets/Project-Screenshots/4.To-DoList-ReactJS.PNG',
     purpose: 'To-do list app allowing users to add and delete to-do items with specified names and dates.',
-    lessons: `Fundamentals of React (components, JSX, state, hooks, and event handlers), mapping, and filtering`,
+    lessons: 'Fundamentals of React (components, JSX, state, hooks, and event handlers), mapping, and filtering',
     technologies: 'HTML, CSS, JavaScript, and React',
     title: 'To-Do List - React JS',
     description: `This app was the first project that I built using React. Functionally and visually, this app works the same as the Vanilla JS To-Do List, and the first paragraph of the description for that project can be referenced for a basic rundown of how it works. The CSS code is identical, however, the JavaScript code saw me working with React components for the first time to put together the functional infrastructure. The purpose of this project was to reverse engineer the Vanilla JS version of this app in React to gain a solid understanding of how to write React code and work with components.
@@ -108,7 +107,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/qBwaxBR',
     src: './assets/Project-Screenshots/3.To-DoList-VanillaJS.PNG',
     purpose: 'To-do list app allowing users to add and delete to-do items with specified names and dates.',
-    lessons: `Destructuring, template literal HTML code, event listeners, loops, and error control; expanded my knowledge further of arrays, objects, local storage, and template literal strings to display dynamic data`,
+    lessons: 'Destructuring, template literal HTML code, event listeners, loops, and error control; expanded my knowledge further of arrays, objects, local storage, and template literal strings to display dynamic data',
     technologies: 'HTML, CSS, and JavaScript',
     title: 'To-Do List - Vanilla JS',
     description: `This app is a simple to-do list that I created using HTML, CSS, and JavaScript. Users can simply type their to-do item into the input box, select a date from the calendar in the date input, and either press the ‘Enter’ key or click the ‘Add Item’ button to add their to-do item to the list. The item is displayed at the bottom of the list as they typed it along with the date they selected, and a delete button for that item. Pressing the delete button next to a to-do item removes it from the list. 
@@ -127,7 +126,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/ExrrPdZ',
     src: './assets/Project-Screenshots/2.RockPaperScissorsGame.PNG',
     purpose: 'Classic rock, paper, scissors game that lets users play, see the result of each round, and keep track of their score.',
-    lessons: `Local storage, concise functions, intervals, query selectors, and template literal strings with variable placeholders`,
+    lessons: 'Local storage, concise functions, intervals, query selectors, and template literal strings with variable placeholders',
     technologies: 'HTML, CSS, and JavaScript',
     title: 'Rock Paper Scissors Game',
     description: `I made this game using HTML, CSS, and JavaScript. Users are able to play the game by clicking the icons for each move or with key down events for the first letter corresponding to each move. The game result displays on the page using the icons, showing the user move and computer move. The program keeps track of the user’s score, which they can choose to reset by clicking the reset button. The user can even make the computer play against itself once per second by using the auto-play feature, and clicking the same button stops auto-play. 
@@ -145,7 +144,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/MWZboPm',
     src: './assets/Project-Screenshots/1.RandomQuoteMachine.PNG',
     purpose: 'Displays a random inspirational quote on load and each time the “new quote” button is pressed. ',
-    lessons: `Objects, arrays, indexing, and queues`,
+    lessons: 'Objects, arrays, indexing, and queues',
     technologies: 'HTML, CSS, JavaScript, and jQuery',
     title: 'Random Quote Machine',
     description: `My first project using HTML, CSS, and JavaScript all together, as well as jQuery. I built it as part of the FreeCodeCamp curriculum in the Front End Development Libraries course. A random quote is generated on load and each time the user presses the “New Quote” button. The quote and author key value pairs are stored inside objects organized inside an array. Used quotes are stored inside a queue array that is cleared when they are all used and the cycle resets. Each time a new quote loads, a new color scheme fades in for the page. This project helped teach me about manipulating data in arrays through indexing and other various JavaScript methods in order to display data on the page for users when actions are performed.`
