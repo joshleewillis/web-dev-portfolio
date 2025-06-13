@@ -4,7 +4,7 @@ const projectArray = [
     link:'https://codepen.io/joshleewillis/full/qEWRjzN',
     src: './assets/Project-Screenshots/8.25+5Clock.PNG',
     purpose: 'Productivity clock to time work sessions and breaks.',
-    lessons: `managing and displaying time in various formats, advanced interconnected state, expanded knowledge on nested conditions, conditional ternary statements, useEffect and useRef hooks to update DOM elements, and font awesome
+    lessons: `Managing and displaying time in various formats, advanced interconnected state, expanded knowledge on nested conditions, conditional ternary statements, useEffect and useRef hooks to update DOM elements, and font awesome
     `,
     technologies: 'HTML, CSS, JavaScript, and React',
     title: '25 + 5 Clock',
