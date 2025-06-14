@@ -443,6 +443,19 @@ textarea:focus:invalid,
     font-size: 2rem;
   }
 
+  #project-grid {
+    grid-template-columns: 90vw;
+    grid-auto-rows: 50rem; /* 800px; */
+  }
+
+  .project-tile {
+    height: 50rem; /* 800px; */
+  }
+  
+  .project-tile-hidden {
+    height: 36.875rem; /* 590px; */
+  }
+
   .image-and-list-container {
     flex-direction: column;
   }
@@ -455,6 +468,7 @@ textarea:focus:invalid,
 
   .list-container {
     height: 50%;
+    padding: 3%;
   }
 }
 
@@ -537,9 +551,11 @@ textarea:focus:invalid,
     font-size: 3rem;
   }
 
+  /*
   #project-grid {
     grid-template-columns: 90vw;
   }
+  */
 
   .project-title {
     font-size: 1.25rem;
