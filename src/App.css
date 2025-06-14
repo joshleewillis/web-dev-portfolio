@@ -248,8 +248,18 @@ hr.rounded {
 .image-and-list-container {
   display: flex;
   flex-direction: row;
-  min-height: 24.0625rem; /* 385px; */
+
+
+  /*
+  justify-content: flex-start;
+  */
+   min-height: 24.0625rem; /* 385px; */
+   max-height: 100vh;
+
+  /*
+  min-height: 100%;
   max-height: 100vh;
+  */
 }
 
 .project-image {
@@ -445,19 +455,20 @@ textarea:focus:invalid,
 
   #project-grid {
     grid-template-columns: 90vw;
-    grid-auto-rows: 50rem; /* 800px; */
+    grid-auto-rows: 56.25rem; /* 900px; */
   }
 
   .project-tile {
-    height: 50rem; /* 800px; */
+    height: 56.25rem; /* 900px; */
   }
   
   .project-tile-hidden {
-    height: 36.875rem; /* 590px; */
+    height: 43.125rem; /* 690px; */
   }
 
   .image-and-list-container {
     flex-direction: column;
+    min-height: 36.5625rem; /* 585px; */
   }
 
   .project-image {
