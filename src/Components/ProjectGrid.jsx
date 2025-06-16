@@ -67,10 +67,26 @@ export default function ProjectGrid() {
 
                   <div className="list-container">
                     <ul>
-                      <li><b>Project Purpose/Function:</b> {project.purpose}</li>
-                      <li><b>What I learned:</b> {project.lessons}</li>
-                      <li><b>Technologies used:</b> {project.technologies}</li>
-                      <li>Link to <b><a href={project.link}>project/source code</a></b></li>
+                      <li>
+                        <b>Project Purpose/Function:</b> {project.purpose}
+                      </li>
+                      <li>
+                        <b>What I learned:</b> {project.lessons}
+                      </li>
+                      <li>
+                        <b>Technologies used:</b> {project.technologies}
+                      </li>
+                      <li>
+                        Link to <b><a 
+                          href={project.link}
+                          aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
+                          title={"Go to: " + project.title + " Project (opens in a new tab)"}
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          project/source code
+                        </a></b>
+                      </li>
                       <li>Click <b>'Show Description'</b> below for a more in-depth description of the project and my process for building it.</li>
                     </ul>
                   </div>
