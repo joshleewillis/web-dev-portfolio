@@ -87,7 +87,9 @@ export default function ProjectGrid() {
                           project/source code
                         </a></b>
                       </li>
-                      <li>Click <b>'Show Description'</b> below for a more in-depth description of the project and my process for building it.</li>
+                      <li>
+                        Click <b>'Show Description'</b> below for a more details about the project and my process for building it.
+                      </li>
                     </ul>
                   </div>
                 </div>
