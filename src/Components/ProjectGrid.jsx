@@ -67,16 +67,16 @@ export default function ProjectGrid() {
 
                   <div className="list-container">
                     <ul>
-                      <li>
+                      <li className="list-item">
                         <b>Project Purpose/Function:</b> {project.purpose}
                       </li>
-                      <li>
+                      <li className="list-item">
                         <b>What I learned:</b> {project.lessons}
                       </li>
-                      <li>
+                      <li className="list-item">
                         <b>Technologies used:</b> {project.technologies}
                       </li>
-                      <li>
+                      <li className="list-item">
                         Link to <b><a 
                           href={project.link}
                           aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
