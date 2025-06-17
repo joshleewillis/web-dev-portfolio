@@ -266,6 +266,7 @@ hr.rounded {
   font-size: 1rem;
   padding-inline-end: 1%;
   background-color: rgb(56, 48, 65);
+  color: lightgrey;
   box-sizing: border-box;
   overflow: auto;
 }
