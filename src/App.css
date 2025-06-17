@@ -248,8 +248,8 @@ hr.rounded {
 .image-and-list-container {
   display: flex;
   flex-direction: row;
-   min-height: 24.0625rem; /* 385px; */
-   max-height: 100vh;
+  min-height: 24.0625rem; /* 385px; */
+  max-height: 100vh;
 }
 
 .project-image {
