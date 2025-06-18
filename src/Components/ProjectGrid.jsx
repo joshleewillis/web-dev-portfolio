@@ -43,7 +43,9 @@ export default function ProjectGrid() {
     <main>
       <section id="project-grid-container">
         <h2 id="project-section-title">My Work:</h2>
-        <p>Below is a list of all my projects. Click <b>'Show Description'</b> below the title of each project for more details about how it works and my process for building it.</p>
+        <p>
+          Below is a list of all my projects. Click <b>'Show Description'</b> below the title of each project for more details about how it works and my process for building it.
+        </p>
         <div id="select-menu-container">
           <label htmlFor="order-select">Sort by: </label>
           <select id="order-select" value={isReversed ? 'oldest-to-newest' : 'newest-to-oldest'} onChange={toggleProjectGridOrder}>
