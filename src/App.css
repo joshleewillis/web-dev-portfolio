@@ -547,7 +547,6 @@ textarea:focus:invalid,
 
   .list-container {
     align-items: flex-start;
-    line-height: 1.25;
   }
 
   .project-title {
