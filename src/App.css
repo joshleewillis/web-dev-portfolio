@@ -198,9 +198,18 @@ hr.rounded {
   color: white;
 }
 
+#project-grid-heading {
+  width: 70vw;
+  padding-inline: 1.25rem;
+}
+
 #project-section-title {
   font-size: 4rem;
   margin-block: 25px;
+}
+
+#project-heading-text {
+  margin-block-start: 0;
 }
 
 #select-menu-container {
@@ -430,6 +439,10 @@ textarea:focus:invalid,
   
   .skill-item p {
     font-size: 2rem;
+  }
+
+  #project-grid-heading {
+    width: 90vw;
   }
 
   #project-grid {
