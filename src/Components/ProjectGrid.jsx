@@ -73,7 +73,7 @@ export default function ProjectGrid() {
                   <div className="list-container">
                     <ul>
                       <li className="list-item">
-                        <b>Project Purpose/Function:</b> {project.purpose}
+                        <b>Purpose/Function:</b> {project.purpose}
                       </li>
                       <li className="list-item">
                         <b>What I learned:</b> {project.lessons}

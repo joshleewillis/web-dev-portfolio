@@ -14,8 +14,7 @@ button:focus,
 textarea:focus {
   outline: 2px dashed rgb(224, 223, 223);
 }
-
-.project-image-anchor:focus, 
+ 
 .project-title-anchor:focus {
   outline-offset: 2px;
 }
