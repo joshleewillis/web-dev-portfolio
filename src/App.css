@@ -200,12 +200,11 @@ hr.rounded {
 
 #project-grid-heading {
   width: 70vw;
-  padding-inline: 1.25rem;
 }
 
 #project-section-title {
   font-size: 4rem;
-  margin-block: 25px;
+  margin-block: 1rem;
 }
 
 #project-heading-text {
@@ -214,7 +213,7 @@ hr.rounded {
 
 #select-menu-container {
   font-size: 1.25rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 #order-select {
