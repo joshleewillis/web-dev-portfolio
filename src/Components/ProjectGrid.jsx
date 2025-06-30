@@ -42,15 +42,20 @@ export default function ProjectGrid() {
   return (
     <main>
       <section id="project-grid-container">
-        <h2 id="project-section-title">My Work:</h2>
-        <div id="select-menu-container">
-          <label htmlFor="order-select">Sort by: </label>
-          <select id="order-select" value={isReversed ? 'oldest-to-newest' : 'newest-to-oldest'} onChange={toggleProjectGridOrder}>
-            <option value="newest-to-oldest">Newest to Oldest</option>
-            <option value="oldest-to-newest">Oldest to Newest</option>
-          </select>
+        <div id="project-grid-heading">
+          <h2 id="project-section-title">My Work:</h2>
+          <p id="project-heading-text">
+            Below is a list of all my projects. Click <b>'Show Description'</b> below the title of each project for more details about how it works and my process for building it.
+          </p>
+          <div id="select-menu-container">
+            <label htmlFor="order-select">Sort by: </label>
+            <select id="order-select" value={isReversed ? 'oldest-to-newest' : 'newest-to-oldest'} onChange={toggleProjectGridOrder}>
+              <option value="newest-to-oldest">Newest to Oldest</option>
+              <option value="oldest-to-newest">Oldest to Newest</option>
+            </select>
+          </div>
         </div>
-        
+
         <div id="project-grid">
           {
             currentArray.map((project) => (
@@ -58,20 +63,38 @@ export default function ProjectGrid() {
                 className={expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
                 key={project.id}
               >
-                <a 
-                  className="project-image-anchor" 
-                  href={project.link} 
-                  aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
-                  title={"Go to: " + project.title + " Project (opens in a new tab)"}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+                <div className="image-and-list-container">
                   <img 
                     src={project.src} 
                     className="project-image" 
                     alt={project.title + " Project Screenshot"} 
                   />
-                </a>
+
+                  <div className="list-container">
+                    <ul>
+                      <li className="list-item">
+                        <b>Purpose/Function:</b> {project.purpose}
+                      </li>
+                      <li className="list-item">
+                        <b>What I learned:</b> {project.lessons}
+                      </li>
+                      <li className="list-item">
+                        <b>Technologies used:</b> {project.technologies}
+                      </li>
+                      <li>
+                        Link to <b><a 
+                          href={project.link}
+                          aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
+                          title={"Go to: " + project.title + " Project (opens in a new tab)"}
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          project/source code
+                        </a></b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
     
                 <a 
                   className="project-title-anchor" 

@@ -14,8 +14,7 @@ button:focus,
 textarea:focus {
   outline: 2px dashed rgb(224, 223, 223);
 }
-
-.project-image-anchor:focus, 
+ 
 .project-title-anchor:focus {
   outline-offset: 2px;
 }
@@ -198,14 +197,22 @@ hr.rounded {
   color: white;
 }
 
+#project-grid-heading {
+  width: 70vw;
+}
+
 #project-section-title {
   font-size: 4rem;
-  margin-block: 25px;
+  margin-block: 1rem;
+}
+
+#project-heading-text {
+  margin-block-start: 0;
 }
 
 #select-menu-container {
   font-size: 1.25rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 #order-select {
@@ -216,16 +223,15 @@ hr.rounded {
 
 #project-grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: 70vw;
   grid-auto-rows: 43.75rem; /* 700px; */
   row-gap: 100px;
 }
 
-
 .project-grid-reversed {
   animation: fadein 1s linear;
 }
-
 
 .project-tile, .project-tile-hidden {
   display: flex;
@@ -245,13 +251,37 @@ hr.rounded {
   height: 30.625rem; /* 490px; */
 }
 
-.project-image, .show-hide-button { 
-  width: 100%;
+.image-and-list-container {
+  display: flex;
+  flex-direction: row;
+  height: 24.0625rem; /* 385px; */
 }
 
 .project-image {
   display: flex;
-  height: 24.0625rem; /* 385px; */
+  width: 50%;
+  height: 100%;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1rem;
+  padding-inline-end: 1%;
+  background-color: rgb(56, 48, 65);
+  color: lightgrey;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.list-item {
+  margin-block-end: .5rem;
+}
+
+.show-hide-button { 
+  width: 100%;
 }
 
 .hover-underline-animation {
@@ -272,8 +302,7 @@ hr.rounded {
   transform-origin: bottom right;
 }
 
-/* Underline animation when project title or project image are hovered over. */
-.project-image-anchor:hover ~ .project-title-anchor .project-title .hover-underline-animation::after,
+/* Underline animation when project title is hovered over. */
 .project-title-anchor:hover .hover-underline-animation::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -409,6 +438,41 @@ textarea:focus:invalid,
   .skill-item p {
     font-size: 2rem;
   }
+
+  #project-grid-heading {
+    width: 90vw;
+  }
+
+  #project-grid {
+    grid-template-columns: 90vw;
+    grid-auto-rows: 56.25rem; /* 900px; */
+  }
+
+  .project-tile {
+    height: 56.25rem; /* 900px; */
+  }
+  
+  .project-tile-hidden {
+    height: 43.125rem; /* 690px; */
+  }
+
+  .image-and-list-container {
+    flex-direction: column;
+    height: 36.5625rem; /* 585px; */
+  }
+
+  .project-image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .list-container {
+    height: 50%;
+  }
+
+  #footer {
+    width: 90vw;
+  }
 }
 
 /* 900px */
@@ -435,6 +499,10 @@ textarea:focus:invalid,
 @media screen and (max-width: 50rem) {
   #navbar {
     justify-content: center;
+  }
+
+  .list-container {
+    padding-inline-end: 2%;
   }
 
   #footer-title {
@@ -470,14 +538,14 @@ textarea:focus:invalid,
 
   #header {
     padding-block-start: 8rem; /* 128px; */
-   }
+  }
 
-   #intro {
+  #intro {
     align-items: center;
     text-align: center;
-   }
+  }
 
-   #skills-title {
+  #skills-title {
     font-size: 3rem;
   }
 
@@ -490,16 +558,12 @@ textarea:focus:invalid,
     font-size: 3rem;
   }
 
-  #project-grid {
-    grid-template-columns: 90vw;
+  .list-container {
+    align-items: flex-start;
   }
 
   .project-title {
     font-size: 1.25rem;
-  }
-
-  #footer {
-    width: 90vw;
   }
 
   #footer-title {
