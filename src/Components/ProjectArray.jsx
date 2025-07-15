@@ -110,7 +110,7 @@ const projectArray = [
   {
     id: 5,
     link:'https://codepen.io/joshleewillis/full/qBwaxBR',
-    code: 'https://codepen.io/joshleewillis/full/qBwaxBR',
+    code: 'https://codepen.io/joshleewillis/pen/qBwaxBR',
     src: './assets/Project-Screenshots/3.To-DoList-VanillaJS.PNG',
     purpose: 'To-do list app allowing users to add and delete to-do items with specified names and dates.',
     lessons: 'Destructuring, template literal HTML code, event listeners, loops, and error control; expanded my knowledge further of arrays, objects, local storage, and template literal strings to display dynamic data',
