@@ -81,16 +81,31 @@ export default function ProjectGrid() {
                       <li className="list-item">
                         <b>Technologies used:</b> {project.technologies}
                       </li>
-                      <li>
-                        Link to <b><a 
-                          href={project.link}
-                          aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
-                          title={"Go to: " + project.title + " Project (opens in a new tab)"}
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          project/source code
-                        </a></b>
+                      <li> <b>Links:</b> 
+                        <ul>
+                          <li>
+                            <b><a 
+                              href={project.link}
+                              aria-label={"Go to: " + project.title + " Project (opens in a new tab)"}
+                              title={"Go to: " + project.title + " Project (opens in a new tab)"}
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            >
+                              Project
+                            </a></b>
+                          </li>
+                          <li>
+                            <b><a
+                              href={project.code}
+                              aria-label={"Go to: " + project.title + " Project Source Code (opens in a new tab)"}
+                              title={"Go to: " + project.title + " Project Source Code (opens in a new tab)"}
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            >
+                              Source Code
+                            </a></b>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </div>
