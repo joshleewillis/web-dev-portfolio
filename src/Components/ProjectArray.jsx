@@ -2,6 +2,7 @@ const projectArray = [
   {
     id: 0,
     link:'https://codepen.io/joshleewillis/full/qEWRjzN',
+    code: 'https://codepen.io/joshleewillis/pen/qEWRjzN',
     src: './assets/Project-Screenshots/8.25+5Clock.PNG',
     purpose: 'Productivity clock to time work sessions and breaks.',
     lessons: 'Managing and displaying time in various formats, advanced interconnected state, expanded knowledge on nested conditions, conditional ternary statements, useEffect and useRef hooks to update DOM elements, and font awesome',
@@ -23,6 +24,7 @@ const projectArray = [
   {
     id: 1,
     link: 'https://codepen.io/joshleewillis/full/GRbVoEy',
+    code: 'https://codepen.io/joshleewillis/pen/GRbVoEy',
     src: './assets/Project-Screenshots/7.JavaScriptCalculator.PNG', 
     purpose: 'Calculator App',
     lessons: 'Improved understanding of React state, complex Boolean logic, nested conditions, handling edge cases, the includes method, and expanded knowledge of the map method for dynamically mapping buttons to the grid',
@@ -48,6 +50,7 @@ const projectArray = [
   {
     id: 2,
     link: 'https://codepen.io/joshleewillis/full/ZEdoaYw',
+    code: 'https://codepen.io/joshleewillis/pen/ZEdoaYw',
     src: './assets/Project-Screenshots/6.DrumMachine.PNG',
     purpose: 'Virtual midi drum machine pad',
     lessons: 'Mapping a button grid, audio and checkbox elements, the replace method, keydown events, and preventing memory leaks with useEffect',
@@ -69,6 +72,7 @@ const projectArray = [
   {
     id: 3,
     link: 'https://codepen.io/joshleewillis/full/yLdPLvX',
+    code: 'https://codepen.io/joshleewillis/pen/yLdPLvX',
     src: './assets/Project-Screenshots/5.MarkdownPreviewer.PNG', 
     purpose: 'Markdown text editor with style preview that updates as users type.',
     lessons: 'Markdown, Marked JS Library, helper functions, and expanding on the fundamentals of React',
@@ -86,6 +90,7 @@ const projectArray = [
   {
     id: 4,
     link:'https://codepen.io/joshleewillis/full/yLdggwY',
+    code: 'https://codepen.io/joshleewillis/pen/yLdggwY',
     src: './assets/Project-Screenshots/4.To-DoList-ReactJS.PNG',
     purpose: 'To-do list app allowing users to add and delete to-do items with specified names and dates.',
     lessons: 'Fundamentals of React (components, JSX, state, hooks, and event handlers), mapping, and filtering',
@@ -105,6 +110,7 @@ const projectArray = [
   {
     id: 5,
     link:'https://codepen.io/joshleewillis/full/qBwaxBR',
+    code: 'https://codepen.io/joshleewillis/full/qBwaxBR',
     src: './assets/Project-Screenshots/3.To-DoList-VanillaJS.PNG',
     purpose: 'To-do list app allowing users to add and delete to-do items with specified names and dates.',
     lessons: 'Destructuring, template literal HTML code, event listeners, loops, and error control; expanded my knowledge further of arrays, objects, local storage, and template literal strings to display dynamic data',
@@ -124,6 +130,7 @@ const projectArray = [
   {
     id: 6,
     link:'https://codepen.io/joshleewillis/full/ExrrPdZ',
+    code: 'https://codepen.io/joshleewillis/pen/ExrrPdZ',
     src: './assets/Project-Screenshots/2.RockPaperScissorsGame.PNG',
     purpose: 'Classic rock, paper, scissors game that lets users play, see the result of each round, and keep track of their score.',
     lessons: 'Local storage, concise functions, intervals, query selectors, and template literal strings with variable placeholders',
@@ -142,6 +149,7 @@ const projectArray = [
   {
     id: 7,
     link:'https://codepen.io/joshleewillis/full/MWZboPm',
+    code: 'https://codepen.io/joshleewillis/pen/MWZboPm',
     src: './assets/Project-Screenshots/1.RandomQuoteMachine.PNG',
     purpose: 'Displays a random inspirational quote on load and each time the “new quote” button is pressed. ',
     lessons: 'Objects, arrays, indexing, and queues',
