@@ -63,6 +63,7 @@ export default function Header() {
             Check out my work below!
             <i className="fas fa-arrow-down arrow-icon"></i>
           </a>
+          <img src="./assets/ThoughtfulPhoto.jpg" className="site-owner-photo" alt="First Photo of Site Owner" />
         </div>
 
         <hr className="rounded" />
