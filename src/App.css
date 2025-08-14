@@ -131,6 +131,7 @@ html {
 #welcome-section {
   display: flex;
   flex-direction: row;
+  height: 75vh;
 }
 
 #intro {
@@ -163,7 +164,6 @@ html {
 
 .site-owner-photo {
   width: 50%;
-  height: 50vh;
 }
 
 /* Dividing line between sections. */
