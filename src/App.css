@@ -137,6 +137,7 @@ html {
 #intro {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #intro-title {
@@ -163,7 +164,7 @@ html {
 }
 
 .site-owner-photo {
-  width: 50%;
+  width: 40%;
 }
 
 /* Dividing line between sections. */
