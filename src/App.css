@@ -514,7 +514,7 @@ textarea:focus:invalid,
 
   #welcome-section {
     flex-direction: column;
-    height: 95vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -526,6 +526,7 @@ textarea:focus:invalid,
 
   .site-owner-photo {
     width: 50%;
+    margin-block-start: 30px;
   }
 
   .list-container {
