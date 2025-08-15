@@ -512,6 +512,22 @@ textarea:focus:invalid,
     justify-content: center;
   }
 
+  #welcome-section {
+    flex-direction: column;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #intro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-owner-photo {
+    width: 50%;
+  }
+
   .list-container {
     padding-inline-end: 2%;
   }
@@ -551,9 +567,8 @@ textarea:focus:invalid,
     padding-block-start: 8rem; /* 128px; */
   }
 
-  #intro {
-    align-items: center;
-    text-align: center;
+  .site-owner-photo {
+    width: 15.5rem; /* 248px */
   }
 
   #skills-title {
