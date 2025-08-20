@@ -164,7 +164,7 @@ html {
 }
 
 .site-owner-photo {
-  width: 40%;
+  width: 30%;
 }
 
 /* Dividing line between sections. */
@@ -440,6 +440,13 @@ textarea:focus:invalid,
   }
 }
 
+/* 1200px */
+@media screen and (max-width: 75rem) {
+  .site-owner-photo {
+    width: 40%;
+  }
+}
+
 /* 1050px */
 @media screen and (max-width: 65.625rem) {
   #skills-title {
@@ -569,7 +576,7 @@ textarea:focus:invalid,
   }
 
   .site-owner-photo {
-    width: 15.5rem; /* 248px */
+    width: 15.5rem; /* 248px - Same width as intro-link. */
   }
 
   #skills-title {
