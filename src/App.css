@@ -507,7 +507,7 @@ textarea:focus:invalid,
 
 /* 1000px */
 @media screen and (max-width: 62.5rem) {
-  .header-photo, .footer-photo {
+  .header-photo {
     width: 50%;
   }
 
@@ -570,7 +570,7 @@ textarea:focus:invalid,
   }
 
   .footer-photo {
-    margin-block: 20px;
+    margin-block-end: 20px;
     margin-inline-start: 0;
   }
 }
@@ -605,7 +605,7 @@ textarea:focus:invalid,
     padding-block-start: 8rem; /* 128px; */
   }
 
-  .header-photo {
+  .header-photo, .footer-photo {
     width: 15.5rem; /* 248px - Same width as intro-link. */
   }
 
