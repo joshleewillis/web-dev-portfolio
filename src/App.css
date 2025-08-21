@@ -163,7 +163,7 @@ html {
   padding-left: 8px;
 }
 
-.site-owner-photo {
+.header-photo, .footer-photo {
   width: 30%;
   margin-inline-start: 20px;
 }
@@ -454,7 +454,7 @@ textarea:focus:invalid,
 
 /* 1200px */
 @media screen and (max-width: 75rem) {
-  .site-owner-photo {
+  .header-photo, .footer-photo {
     width: 40%;
   }
 }
@@ -507,7 +507,7 @@ textarea:focus:invalid,
 
 /* 1000px */
 @media screen and (max-width: 62.5rem) {
-  .site-owner-photo {
+  .header-photo, .footer-photo {
     width: 50%;
   }
 
@@ -550,7 +550,7 @@ textarea:focus:invalid,
     text-align: center;
   }
 
-  .site-owner-photo {
+  .header-photo {
     margin-block-start: 30px;
     margin-inline-start: 0;
   }
@@ -567,6 +567,11 @@ textarea:focus:invalid,
 
   #footer-title {
     font-size: 2.5rem;
+  }
+
+  .footer-photo {
+    margin-block: 20px;
+    margin-inline-start: 0;
   }
 }
 
@@ -600,7 +605,7 @@ textarea:focus:invalid,
     padding-block-start: 8rem; /* 128px; */
   }
 
-  .site-owner-photo {
+  .header-photo {
     width: 15.5rem; /* 248px - Same width as intro-link. */
   }
 
