@@ -461,6 +461,10 @@ textarea:focus:invalid,
 
 /* 1050px */
 @media screen and (max-width: 65.625rem) {
+  #welcome-section {
+    height: 100%;
+  }
+
   #skills-title {
     text-align: center;
   }
@@ -540,7 +544,6 @@ textarea:focus:invalid,
 
   #welcome-section {
     flex-direction: column;
-    height: 100%;
     align-items: center;
     justify-content: center;
   }
