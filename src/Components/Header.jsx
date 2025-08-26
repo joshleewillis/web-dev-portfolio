@@ -56,13 +56,16 @@ export default function Header() {
       </nav>
 
       <section id="header">
-        <div id="intro">
-          <h1 id="intro-title">Hi, I'm <u>Josh Willis</u>.</h1>
-          <p id="intro-text">A passionate <b>Web Developer</b> crafting clean, responsive, and user-friendly websites and applications.</p>
-          <a href="#project-grid-container" id="intro-link">
-            Check out my work below!
-            <i className="fas fa-arrow-down arrow-icon"></i>
-          </a>
+        <div id="welcome-section">
+          <div id="intro">
+            <h1 id="intro-title">Hi, I'm <u>Josh Willis</u>.</h1>
+            <p id="intro-text">A passionate <b>Web Developer</b> crafting clean, responsive, and user-friendly websites and applications.</p>
+            <a href="#project-grid-container" id="intro-link">
+              Check out my work below!
+              <i className="fas fa-arrow-down arrow-icon"></i>
+            </a>
+          </div>
+          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="First Thoughtful Photo of Site Owner" />
         </div>
 
         <hr className="rounded" />

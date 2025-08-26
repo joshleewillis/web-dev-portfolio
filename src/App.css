@@ -128,9 +128,16 @@ html {
   padding-inline: 1.25rem;
 }
 
+#welcome-section {
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+}
+
 #intro {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #intro-title {
@@ -154,6 +161,11 @@ html {
 
 .arrow-icon {
   padding-left: 8px;
+}
+
+.header-photo, .footer-photo {
+  width: 30%;
+  margin-inline-start: 20px;
 }
 
 /* Dividing line between sections. */
@@ -368,6 +380,17 @@ a {
   width: 70vw;
 }
 
+#footer-text-and-image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 #footer-title {
   font-size: 4rem;
   margin-block: 25px;
@@ -429,8 +452,19 @@ textarea:focus:invalid,
   }
 }
 
+/* 1200px */
+@media screen and (max-width: 75rem) {
+  .header-photo, .footer-photo {
+    width: 40%;
+  }
+}
+
 /* 1050px */
 @media screen and (max-width: 65.625rem) {
+  #welcome-section {
+    height: 100%;
+  }
+
   #skills-title {
     text-align: center;
   }
@@ -475,8 +509,12 @@ textarea:focus:invalid,
   }
 }
 
-/* 900px */
-@media screen and (max-width: 56.25rem) {
+/* 1000px */
+@media screen and (max-width: 62.5rem) {
+  .header-photo {
+    width: 50%;
+  }
+
   #intro-title {
     font-size: 4rem;
   }
@@ -484,7 +522,10 @@ textarea:focus:invalid,
   #intro-text {
     font-size: 1.5rem;
   }
+}
 
+/* 900px */
+@media screen and (max-width: 56.25rem) {
   #footer-title {
     font-size: 3rem;
     margin-block: 0 25px;
@@ -501,12 +542,39 @@ textarea:focus:invalid,
     justify-content: center;
   }
 
+  #welcome-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #intro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-photo {
+    margin-block-start: 30px;
+    margin-inline-start: 0;
+  }
+
   .list-container {
     padding-inline-end: 2%;
   }
 
+  #footer-text-and-image-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   #footer-title {
     font-size: 2.5rem;
+  }
+
+  .footer-photo {
+    margin-block-end: 20px;
+    margin-inline-start: 0;
   }
 }
 
@@ -540,9 +608,8 @@ textarea:focus:invalid,
     padding-block-start: 8rem; /* 128px; */
   }
 
-  #intro {
-    align-items: center;
-    text-align: center;
+  .header-photo, .footer-photo {
+    width: 15.5rem; /* 248px - Same width as intro-link. */
   }
 
   #skills-title {
