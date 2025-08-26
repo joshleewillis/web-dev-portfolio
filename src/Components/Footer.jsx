@@ -13,6 +13,11 @@ export default function Footer() {
           <img src="./assets/SmilePhoto.jpg" className="footer-photo" alt="Second Photo of Site Owner Smiling" />
         </div>
         < ContactEmail />
+        <div id="footer-links">
+          <a href="https://github.com/joshleewillis">Github</a>
+          <a href="https://www.linkedin.com/in/joshua-willis-45794293/">LinkedIn</a>
+          <a href="https://www.freecodecamp.org/joshleewillis">FreeCodeCamp</a>
+        </div>
       </section>
     </footer>
   );
