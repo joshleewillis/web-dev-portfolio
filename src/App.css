@@ -181,6 +181,10 @@ html {
   align-items: center;
 }
 
+.header-link {
+  height: 60px;
+}
+
 /* Dividing line between sections. */
 hr.rounded {
   width: 100%;
