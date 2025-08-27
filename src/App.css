@@ -163,9 +163,22 @@ html {
   padding-left: 8px;
 }
 
-.header-photo, .footer-photo {
+#header-image-and-links-container, .footer-photo {
   width: 30%;
   margin-inline-start: 20px;
+}
+
+.header-photo {
+  width: 100%;
+  height: 90%;
+}
+
+#header-links {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Dividing line between sections. */
