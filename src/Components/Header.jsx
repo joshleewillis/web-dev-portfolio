@@ -65,7 +65,14 @@ export default function Header() {
               <i className="fas fa-arrow-down arrow-icon"></i>
             </a>
           </div>
-          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="First Thoughtful Photo of Site Owner" />
+          <div id="header-image-and-links-container">
+            <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="First Thoughtful Photo of Site Owner" />
+            <div id="header-links">
+              <a href="https://github.com/joshleewillis">Github</a>
+              <a href="https://www.linkedin.com/in/joshua-willis-45794293/">LinkedIn</a>
+              <a href="https://www.freecodecamp.org/joshleewillis">FreeCodeCamp</a>
+            </div>
+          </div>
         </div>
 
         <hr className="rounded" />
