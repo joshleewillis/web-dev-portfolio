@@ -163,21 +163,16 @@ html {
   padding-left: 8px;
 }
 
-#header-image-and-links-container, .footer-photo {
+.header-photo, .footer-photo {
   width: 30%;
   margin-inline-start: 20px;
-}
-
-.header-photo {
-  width: 100%;
-  height: 90%;
 }
 
 #header-links {
   height: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
   align-items: center;
 }
 
