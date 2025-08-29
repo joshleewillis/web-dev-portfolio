@@ -60,21 +60,24 @@ export default function Header() {
           <div id="intro">
             <h1 id="intro-title">Hi, I'm <u>Josh Willis</u>.</h1>
             <p id="intro-text">A passionate <b>Web Developer</b> crafting clean, responsive, and user-friendly websites and applications.</p>
+
             <div id="header-links">
-              <a href="https://github.com/joshleewillis">
-                <img src="./assets/Logo_Images/github-logo.png" class="header-link" />
-              </a>
-              <a href="https://www.linkedin.com/in/joshua-willis-45794293/">
-                <img src="./assets/Logo_Images/linkedin-logo.png" class="header-link" />
-              </a>
-              <a href="https://www.freecodecamp.org/joshleewillis">
-                <img src="./assets/Logo_Images/free-code-camp-logo.png" class="header-link" />
+              <div id="profile-links">
+                <a href="https://github.com/joshleewillis">
+                  <img src="./assets/Logo_Images/github-logo.png" class="profile-link" />
+                </a>
+                <a href="https://www.linkedin.com/in/joshua-willis-45794293/">
+                  <img src="./assets/Logo_Images/linkedin-logo.png" class="profile-link" />
+                </a>
+                <a href="https://www.freecodecamp.org/joshleewillis">
+                  <img src="./assets/Logo_Images/free-code-camp-logo.png" class="profile-link" />
+                </a>
+              </div>
+              <a href="#project-grid-container" id="intro-link">
+                Check out my work below!
+                <i className="fas fa-arrow-down arrow-icon"></i>
               </a>
             </div>
-            <a href="#project-grid-container" id="intro-link">
-              Check out my work below!
-              <i className="fas fa-arrow-down arrow-icon"></i>
-            </a>
           </div>
           <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="First Thoughtful Photo of Site Owner" />
         </div>

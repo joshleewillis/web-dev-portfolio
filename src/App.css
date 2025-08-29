@@ -149,6 +149,18 @@ html {
   font-size: 2rem;
 }
 
+#profile-links {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-link {
+  height: 60px;
+}
+
 #intro-link {
   background-color: aliceblue;
   text-decoration: none;
@@ -166,18 +178,6 @@ html {
 .header-photo, .footer-photo {
   width: 30%;
   margin-inline-start: 20px;
-}
-
-#header-links {
-  height: 10%;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
-
-.header-link {
-  height: 60px;
 }
 
 /* Dividing line between sections. */
