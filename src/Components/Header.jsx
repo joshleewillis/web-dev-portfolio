@@ -67,13 +67,13 @@ export default function Header() {
               </a>
               <div id="profile-links">
                 <a href="https://github.com/joshleewillis">
-                  <img src="./assets/Logo_Images/github-logo.png" class="profile-link" />
+                  <img src="./assets/Logo_Images/github-logo.png" className="profile-link" />
                 </a>
                 <a href="https://www.linkedin.com/in/joshua-willis-45794293/">
-                  <img src="./assets/Logo_Images/linkedin-logo.png" class="profile-link" />
+                  <img src="./assets/Logo_Images/linkedin-logo.png" className="profile-link" />
                 </a>
                 <a href="https://www.freecodecamp.org/joshleewillis">
-                  <img src="./assets/Logo_Images/free-code-camp-logo.png" class="profile-link" />
+                  <img src="./assets/Logo_Images/free-code-camp-logo.png" className="profile-link" />
                 </a>
               </div>
             </div>
