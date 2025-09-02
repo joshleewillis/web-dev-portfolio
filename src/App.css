@@ -470,6 +470,14 @@ textarea:focus:invalid,
   margin-block-end: 10px;
 }
 
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 /* MEDIA QUERIES */
 /* 1295px */
 @media screen and (max-width: 80.938rem) {

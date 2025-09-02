@@ -14,9 +14,24 @@ export default function Footer() {
         </div>
         < ContactEmail />
         <div id="footer-links">
-          <a href="https://github.com/joshleewillis">Github</a>
-          <a href="https://www.linkedin.com/in/joshua-willis-45794293/">LinkedIn</a>
-          <a href="https://www.freecodecamp.org/joshleewillis">FreeCodeCamp</a>
+          <a 
+            href="https://github.com/joshleewillis" 
+            className="footer-link"
+          >
+            Github
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/joshua-willis-45794293/" 
+            className="footer-link"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href="https://www.freecodecamp.org/joshleewillis" 
+            className="footer-link"
+          >
+            FreeCodeCamp
+          </a>
         </div>
       </section>
     </footer>
