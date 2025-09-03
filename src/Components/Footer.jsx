@@ -17,18 +17,24 @@ export default function Footer() {
           <a 
             href="https://github.com/joshleewillis" 
             className="footer-link"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             Github
           </a>
           <a 
             href="https://www.linkedin.com/in/joshua-willis-45794293/" 
             className="footer-link"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a 
             href="https://www.freecodecamp.org/joshleewillis" 
             className="footer-link"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             FreeCodeCamp
           </a>
