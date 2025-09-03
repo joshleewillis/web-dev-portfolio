@@ -3,6 +3,27 @@ import { useState, useEffect } from 'react';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const profileLinksArray = [
+    {
+      href: 'https://github.com/joshleewillis',
+      src: './assets/Logo_Images/github-logo.png',
+      alt: 'Github Logo',
+      title: 'Github'
+    },
+    {
+      href: 'https://www.linkedin.com/in/joshua-willis-45794293/',
+      src: './assets/Logo_Images/linkedin-logo.png',
+      alt: 'Linkedin Logo',
+      title: 'Linkedin'
+    },
+    {
+      href: 'https://www.freecodecamp.org/joshleewillis',
+      src: './assets/Logo_Images/free-code-camp-logo.png',
+      alt: 'FreeCodeCamp Logo',
+      title: 'FreeCodeCamp'
+    }
+  ];
+
   // useEffect to prevent focus for the hamburger menu on mouse click.
   useEffect(() => {
     const hamburgerMenu = document.querySelector('.hamburger');
@@ -66,27 +87,23 @@ export default function Header() {
                 <i className="fas fa-arrow-down arrow-icon"></i>
               </a>
               <div id="profile-links">
-                <a href="https://github.com/joshleewillis" target="_blank" rel="noopener noreferrer">
-                  <img 
-                    src="./assets/Logo_Images/github-logo.png" 
-                    alt="Github Logo" 
-                    className="profile-link" 
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/joshua-willis-45794293/" target="_blank" rel="noopener noreferrer">
-                  <img 
-                    src="./assets/Logo_Images/linkedin-logo.png" 
-                    alt="Linkedin Logo" 
-                    className="profile-link" 
-                  />
-                </a>
-                <a href="https://www.freecodecamp.org/joshleewillis" target="_blank" rel="noopener noreferrer">
-                  <img 
-                    src="./assets/Logo_Images/free-code-camp-logo.png" 
-                    alt="FreeCodeCamp Logo" 
-                    className="profile-link" 
-                  />
-                </a>
+                {
+                  profileLinksArray.map((link) => (
+                    <a 
+                      href={link.href} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      aria-label={"Go to: Josh Willis' " + link.title + " Profile (opens in a new tab)"} 
+                      title={"Go to: Josh Willis' " + link.title + " Profile (opens in a new tab)"}
+                    >
+                      <img 
+                        src={link.src} 
+                        alt={link.alt} 
+                        className="profile-link" 
+                      />
+                    </a>
+                  ))
+                }
               </div>
             </div>
           </div>
