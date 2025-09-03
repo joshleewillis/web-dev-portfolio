@@ -90,7 +90,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="Thoughtful Photo of Site Owner" />
+          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="Photo of Josh Willis Pondering Thoughtfully" />
         </div>
 
         <hr className="rounded" />

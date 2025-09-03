@@ -10,7 +10,7 @@ export default function Footer() {
             <h2 id="footer-title">Let's Work Together</h2>
             <p id="footer-text">Send me a message regarding the project or job you would like to work with me on and I'll get back to you as soon as possible.</p>
           </div>  
-          <img src="./assets/SmilePhoto.jpg" className="footer-photo" alt="Second Photo of Site Owner Smiling" />
+          <img src="./assets/SmilePhoto.jpg" className="footer-photo" alt="Photo of Josh Willis Smiling Warmly" />
         </div>
         < ContactEmail />
         <div id="footer-links">
