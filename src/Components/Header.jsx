@@ -1,28 +1,8 @@
 import { useState, useEffect } from 'react';
+import profileLinksArray from './ProfileLinksArray';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const profileLinksArray = [
-    {
-      href: 'https://github.com/joshleewillis',
-      src: './assets/Logo_Images/github-logo.png',
-      alt: 'Github Logo',
-      title: 'Github'
-    },
-    {
-      href: 'https://www.linkedin.com/in/joshua-willis-45794293/',
-      src: './assets/Logo_Images/linkedin-logo.png',
-      alt: 'Linkedin Logo',
-      title: 'Linkedin'
-    },
-    {
-      href: 'https://www.freecodecamp.org/joshleewillis',
-      src: './assets/Logo_Images/free-code-camp-logo.png',
-      alt: 'FreeCodeCamp Logo',
-      title: 'FreeCodeCamp'
-    }
-  ];
 
   // useEffect to prevent focus for the hamburger menu on mouse click.
   useEffect(() => {
@@ -93,8 +73,8 @@ export default function Header() {
                       href={link.href} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      aria-label={"Go to: Josh Willis' " + link.title + " Profile (opens in a new tab)"} 
-                      title={"Go to: Josh Willis' " + link.title + " Profile (opens in a new tab)"}
+                      aria-label={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"} 
+                      title={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"}
                     >
                       <img 
                         src={link.src} 

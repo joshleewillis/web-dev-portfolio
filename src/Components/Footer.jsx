@@ -1,4 +1,5 @@
 import ContactEmail from './EmailJS.jsx';
+import profileLinksArray from './ProfileLinksArray';
 
 export default function Footer() {
   return (
@@ -14,30 +15,20 @@ export default function Footer() {
         </div>
         < ContactEmail />
         <div id="footer-links">
-          <a 
-            href="https://github.com/joshleewillis" 
-            className="footer-link"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/joshua-willis-45794293/" 
-            className="footer-link"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a 
-            href="https://www.freecodecamp.org/joshleewillis" 
-            className="footer-link"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            FreeCodeCamp
-          </a>
+          {
+            profileLinksArray.map((link) => (
+              <a 
+                href={link.href} 
+                className="footer-link"
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"} 
+                title={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"}
+              >
+                {link.title}
+              </a>
+            ))
+          }
         </div>
       </section>
     </footer>
