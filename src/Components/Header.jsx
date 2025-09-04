@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import profileLinksArray from './ProfileLinksArray';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,12 +61,33 @@ export default function Header() {
           <div id="intro">
             <h1 id="intro-title">Hi, I'm <u>Josh Willis</u>.</h1>
             <p id="intro-text">A passionate <b>Web Developer</b> crafting clean, responsive, and user-friendly websites and applications.</p>
-            <a href="#project-grid-container" id="intro-link">
-              Check out my work below!
-              <i className="fas fa-arrow-down arrow-icon"></i>
-            </a>
+            <div id="header-links">
+              <a href="#project-grid-container" id="intro-link">
+                Check out my work below!
+                <i className="fas fa-arrow-down arrow-icon"></i>
+              </a>
+              <div id="profile-links">
+                {
+                  profileLinksArray.map((link) => (
+                    <a 
+                      href={link.href} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      aria-label={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"} 
+                      title={"Go to: Josh's " + link.title + " Profile (opens in a new tab)"}
+                    >
+                      <img 
+                        src={link.src} 
+                        alt={link.alt} 
+                        className="profile-link" 
+                      />
+                    </a>
+                  ))
+                }
+              </div>
+            </div>
           </div>
-          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="First Thoughtful Photo of Site Owner" />
+          <img src="./assets/ThoughtfulPhoto.jpg" className="header-photo" alt="Photo of Josh Willis Pondering Thoughtfully" />
         </div>
 
         <hr className="rounded" />
