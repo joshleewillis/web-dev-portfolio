@@ -1,6 +1,32 @@
 const projectArray = [
   {
     id: 0,
+    link:'https://www.joshleewillis.dev/',
+    code: 'https://github.com/joshleewillis/web-dev-portfolio',
+    src: './assets/Project-Screenshots/9. Portfolio Website.PNG',
+    purpose: 'Personal portfolio website to organize my work and track my progress.',
+    lessons: 'Accessibility, Git / version control, advanced knowledge of CSS flexbox and grid, and using a complex development environment to develop React components in an interconnected file system',
+    technologies: 'HTML, CSS, JavaScript, React, and Git',
+    title: 'Portfolio Website',
+    description: `This portfolio was the first website that I launched. I created it to organize the projects that I had finished, with the intent to continuously update it throughout my career as a developer. It features my work from 2023 - present. I developed the website with React in Stackblitz (which emulates VS Code). Closer to the time that I was getting ready to launch the site, I linked the project to GitHub, which is where I hosted it using GitHub Pages. A link to the repository can be found above.
+
+    Creating this website was the most complex project that I had done at this point in my career. I worked meticulously on the styling and functionality to get the site looking good and working the way I wanted. My knowledge and experience with CSS flexbox and grid became much more advanced as a result of using those tools to organize and scale content on the page across various screen sizes. 
+    
+    I started by making a grid for the project tiles and mapping each one dynamically from an array of objects. The intention for this design choice was to make it easy to add future projects that I complete by simply adding a new object to the array with the appropriate properties. I made each project tile into a flexbox column to keep the content consistently organized vertically, and set the view-width of the grid to the appropriate value depending on screen size. I initially had the screenshot of each project taking up the complete width of the project tile, but later added a list section to take up half of this space. This allowed me to add brief bullet points to describe the purpose and function of the project, what I learned from building it, the technologies I used, and a link to the live project and source code. Clicking the title also links to the project, and at the bottom of each tile, the ‘Show Description’ button can be clicked for a more detailed description about the functionality of the project and my process for building it. 
+    
+    State for the project grid component handles the descriptions for each project tile and the order of the grid. The grid by default is ordered from newest projects to oldest, which can be reversed when the user selects the option to do so via the ‘sort by’ menu. The boolean state for ‘isReversed’ gets changed, which triggers the state for the project array to get reversed. This allows users to view my progress from the beginning or starting from my most recent work. There is also an event handler for toggling the project descriptions to expand and close them. The state for this is tracked in an object using the id and index for each project. The event handler checks the information when the button gets clicked and expands the description for that project. There are fade-in animations for both opening a project description and reversing the project list. Handling the animation for the array reversal required making a separate event handler to call inside the function to reverse the order of the project list. In it, I needed to add the class with the animation to the grid and remove it after 1 second (the time it takes the animation to run) with a setTimeOut function to prevent memory leaks. I used ternary conditions for the project tile and project description to alternate between classes based on the current state for each. If the project description was expanded or not, the tile and the description would need specific styles. An important part of this was making sure that the visibility and overflow for the project description were hidden while it was closed. 
+    
+    The next section I focused on was the header for the page. I added a welcome section with a link inviting visitors to skip straight to my work. I would later go on to add images of myself in the header and footer sections to give my page a more personal touch. I also created small sections for my profile links (Github, Linkedin, etc.) next to the header image and at the bottom of the page. I used the respective logos for my profile links in the header, which complimented the design, and plain text for the links in the contact section. To avoid repetition, I made a file with an array of objects containing the info for each link, and imported them to the header and footer files to be mapped dynamically. Both the updates for the images and links sections allowed me to use git branches for the first time to experiment with different design choices, and merge them into the live site once they were finished. Finally, beneath the welcome section is a section for my skills, which primarily focuses on the technologies that I frequently use. For each skill, I added a logo image and title for the technology and used classes to uniformly style them. I used flexbox once again to wrap the row of items and change it to a column for the mobile view. 
+    
+    I developed a hamburger navigation menu to allow visitors of the site to easily move between sections of the page. I used a hidden input checkbox to track whether the nav menu was open or not, and a label with three span elements for the lines in the menu icon. I gave the hamburger menu the highest z index so it would always be visible and adjusted its position accordingly. The nav menu had a right value of -100% and visibility set to ‘hidden’ to make it invisible by default. When the checkbox is checked from the hamburger menu getting pressed, I used transform in CSS to change the lines into an ‘X’ to signify that pressing it again would close the menu, and the ‘right’ value for the nav menu is set to zero and its visibility is activated to make it visible to the user.
+    
+    While I was developing the hamburger menu, I came across accessibility issues that needed to be addressed, and took the time to study accessibility in further detail to make sure that content for the site would be accessible to all users. I created state to track whether the menu was expanded or not for accessibility, using ARIA for screen readers to tell users the current state of the menu. I also set the tabindex for the hamburger menu to zero to make sure that it is the first item on the page that keyboard users would tab over. Going back to the project grid, I implemented ARIA labels in my links, and to match each show/hide button with its respective description, and to tell screen readers whether or not the description is expanded. I also revised my use of labels, buttons, and links to make sure they were up to accessibility standards, and styled the focus outline to make it more visible. Some elements needed specific focus styling, such as the input elements in the contact form. I changed the outline color to red for them only when the input was invalid. I also added some special conditional styling for the email input on the form to show an error when the user does not enter a valid email address. 
+    
+    Completing this website was a major milestone in my career as a developer that I am very proud of. My plan is to continue to add and update features as needed, as well as to add new projects to my portfolio as I complete them. The intent is to keep my work organized and presentable while allowing me to track my progress and growth. The evolution of this site and my personal and professional growth will be directly correlated as I continue to learn, progress, and cultivate growth through challenging myself by trying and building new things. 
+    `
+  },
+  {
+    id: 1,
     link:'https://codepen.io/joshleewillis/full/qEWRjzN',
     code: 'https://codepen.io/joshleewillis/pen/qEWRjzN',
     src: './assets/Project-Screenshots/8.25+5Clock.PNG',
@@ -22,7 +48,7 @@ const projectArray = [
     `
   },
   {
-    id: 1,
+    id: 2,
     link: 'https://codepen.io/joshleewillis/full/GRbVoEy',
     code: 'https://codepen.io/joshleewillis/pen/GRbVoEy',
     src: './assets/Project-Screenshots/7.JavaScriptCalculator.PNG', 
@@ -48,7 +74,7 @@ const projectArray = [
     `
   },
   {
-    id: 2,
+    id: 3,
     link: 'https://codepen.io/joshleewillis/full/ZEdoaYw',
     code: 'https://codepen.io/joshleewillis/pen/ZEdoaYw',
     src: './assets/Project-Screenshots/6.DrumMachine.PNG',
@@ -70,7 +96,7 @@ const projectArray = [
     `
   },
   {
-    id: 3,
+    id: 4,
     link: 'https://codepen.io/joshleewillis/full/yLdPLvX',
     code: 'https://codepen.io/joshleewillis/pen/yLdPLvX',
     src: './assets/Project-Screenshots/5.MarkdownPreviewer.PNG', 
@@ -88,7 +114,7 @@ const projectArray = [
     `
   },
   {
-    id: 4,
+    id: 5,
     link:'https://codepen.io/joshleewillis/full/yLdggwY',
     code: 'https://codepen.io/joshleewillis/pen/yLdggwY',
     src: './assets/Project-Screenshots/4.To-DoList-ReactJS.PNG',
@@ -108,7 +134,7 @@ const projectArray = [
     `
   },
   {
-    id: 5,
+    id: 6,
     link:'https://codepen.io/joshleewillis/full/qBwaxBR',
     code: 'https://codepen.io/joshleewillis/pen/qBwaxBR',
     src: './assets/Project-Screenshots/3.To-DoList-VanillaJS.PNG',
@@ -128,7 +154,7 @@ const projectArray = [
     `
   },
   {
-    id: 6,
+    id: 7,
     link:'https://codepen.io/joshleewillis/full/ExrrPdZ',
     code: 'https://codepen.io/joshleewillis/pen/ExrrPdZ',
     src: './assets/Project-Screenshots/2.RockPaperScissorsGame.PNG',
@@ -147,7 +173,7 @@ const projectArray = [
     This project was a real game changer for me. At the time that I was writing this program, I was simultaneously studying clean code principles and best practices and applying them to my work. Making my functions concise and more focused is an example of that. I was also learning and applying more of the built-in features of JavaScript that I mentioned above. Learning and practicing these principles and applying them through this project helped me move forward with my knowledge of JavaScript and dynamic programming, and served as a precursor to get started on working with JavaScript libraries such as React.`
   },
   {
-    id: 7,
+    id: 8,
     link:'https://codepen.io/joshleewillis/full/MWZboPm',
     code: 'https://codepen.io/joshleewillis/pen/MWZboPm',
     src: './assets/Project-Screenshots/1.RandomQuoteMachine.PNG',
