@@ -126,7 +126,7 @@ export default function ProjectGrid() {
                 
                 {/* Button to toggle the description */}
                 <button 
-                  className="show-hide-button" 
+                  className="show-hide-description-button" 
                   onClick={() => toggleExpanded(project.id)}
                   aria-expanded={expandedProjects[project.id] || "false"}
                   aria-controls={`project-desc-${project.id}`}

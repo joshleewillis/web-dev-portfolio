@@ -19,7 +19,7 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-.show-hide-button:focus {
+.show-hide-description-button:focus {
   outline-offset: 3px;
   opacity: 1;
   z-index: 900; /* Added z-index to ensure focus outline shows. */
@@ -353,7 +353,7 @@ a {
   text-decoration: none;
 }
 
-.show-hide-button {
+.show-hide-description-button {
   text-align: left;
   color: white;
   background-color: rgb(52, 58, 70);
