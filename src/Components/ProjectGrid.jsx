@@ -63,7 +63,7 @@ export default function ProjectGrid() {
           {
             displayedTiles.map((project) => (
               <div 
-                className={expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
+                className={`${expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} ${!showAllTiles && project.id === 1 ? 'teased-tile' : ''}`} 
                 key={project.id}
               >
                 <div className="image-and-list-container">
