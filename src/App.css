@@ -310,10 +310,6 @@ hr.rounded {
   margin-block-end: .5rem;
 }
 
-.show-hide-button { 
-  width: 100%;
-}
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -365,6 +361,7 @@ a {
   opacity: .5;
   cursor: pointer;
   height: 2.1875rem; /* 35px; */
+  width: 100%;
 }
 
 @keyframes fadein {
