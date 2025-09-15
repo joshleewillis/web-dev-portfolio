@@ -2,10 +2,13 @@ import { useState } from 'react';
 import projectArray from './ProjectArray.jsx';
 
 export default function ProjectGrid() {
-  // Track the expanded state of each project using an object.
-  const [expandedProjects, setExpandedProjects] = useState({});
-  const [isReversed, setIsReversed] = useState(false);
   const [currentArray, setCurrentArray] = useState(projectArray);
+  const [expandedProjects, setExpandedProjects] = useState({}); // Track the expanded state of each project using an object.
+  const [isReversed, setIsReversed] = useState(false);
+  const [showAllTiles, setShowAllTiles] = useState(false);
+
+  const teasedTileCount = 2;
+  const displayedTiles = showAllTiles ? currentArray : currentArray.slice(0, teasedTileCount);
 
   // Toggle the expanded state for the clicked project.
   const toggleExpanded = (projectId) => {
@@ -58,7 +61,7 @@ export default function ProjectGrid() {
 
         <div id="project-grid">
           {
-            currentArray.map((project) => (
+            displayedTiles.map((project) => (
               <div 
                 className={expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
                 key={project.id}
