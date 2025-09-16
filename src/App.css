@@ -271,6 +271,7 @@ hr.rounded {
   gap: 0;
   margin: 0;
   border: 3px solid gray;
+  transition: height 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 .project-tile {
@@ -279,6 +280,12 @@ hr.rounded {
 
 .project-tile-hidden {
   height: 30.625rem; /* 490px; */
+}
+
+.teased-tile {
+  height: 15.3125rem; /* 245px - Only show half */
+  overflow: hidden;
+  opacity: 0.5;
 }
 
 .image-and-list-container {
