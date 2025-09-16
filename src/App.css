@@ -265,7 +265,6 @@ hr.rounded {
 .project-tile, .project-tile-hidden {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   gap: 0;
   margin: 0;
@@ -282,7 +281,7 @@ hr.rounded {
 }
 
 .teased-tile {
-  height: 15.3125rem; /* 245px - Only show half */
+  height: 17.8125rem; /* 285px - exclude title and description */
   overflow: hidden;
   opacity: 0.5;
 }
