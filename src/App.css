@@ -255,7 +255,6 @@ hr.rounded {
   display: grid;
   justify-content: center;
   grid-template-columns: 70vw;
-  grid-auto-rows: 43.75rem; /* 700px; */
   row-gap: 100px;
 }
 
@@ -394,6 +393,10 @@ a {
   height: 0; 
   visibility: hidden; 
   overflow: hidden; 
+}
+
+.show-hide-project-list-button {
+  height: 3rem;
 }
 
 #footer {
