@@ -396,6 +396,11 @@ a {
 
 .show-hide-project-list-button {
   height: 3rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border: 2px solid rgb(133, 133, 133);
 }
 
 #footer {
