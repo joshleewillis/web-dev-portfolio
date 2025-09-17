@@ -280,10 +280,16 @@ hr.rounded {
   height: 30.625rem; /* 490px; */
 }
 
+/* Exclude title and description when teased. */
 .teased-tile {
-  height: 17.8125rem; /* 285px - exclude title and description */
+  height: 17.8125rem; /* 285px */
   overflow: hidden;
   opacity: 0.5;
+}
+
+.teased-tile .project-title,
+.teased-tile .show-hide-description-button {
+  visibility: hidden;
 }
 
 .image-and-list-container {
@@ -524,7 +530,6 @@ textarea:focus:invalid,
 
   #project-grid {
     grid-template-columns: 90vw;
-    grid-auto-rows: 56.25rem; /* 900px; */
   }
 
   .project-tile {
@@ -533,6 +538,10 @@ textarea:focus:invalid,
   
   .project-tile-hidden {
     height: 43.125rem; /* 690px; */
+  }
+
+  .teased-tile {
+    height: 29.6875rem; /* 475px - exclude title and description */
   }
 
   .image-and-list-container {
