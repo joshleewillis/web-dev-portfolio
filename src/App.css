@@ -400,6 +400,10 @@ a {
   overflow: hidden; 
 }
 
+.show-hide-project-list-button-container {
+  text-align: center;
+}
+
 .show-hide-project-list-button {
   height: 3rem;
   font-size: 1.75rem;
