@@ -154,7 +154,10 @@ export default function ProjectGrid() {
           } 
         </div>
         <div className="show-hide-project-list-button-container">
-          <button onClick={() => setShowAllTiles(!showAllTiles)} className="show-hide-project-list-button">
+          <button 
+            onClick={() => setShowAllTiles(!showAllTiles)} 
+            className={showAllTiles ? "show-hide-project-list-button-open" : "show-hide-project-list-button-closed"}
+          >
             {showAllTiles ? 'Hide Projects' : 'Show All Projects'}
           </button>
         </div>

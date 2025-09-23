@@ -404,13 +404,22 @@ a {
   text-align: center;
 }
 
-.show-hide-project-list-button {
+.show-hide-project-list-button-open,
+.show-hide-project-list-button-closed {
   height: 3rem;
   font-size: 1.75rem;
   cursor: pointer;
   background-color: rgb(60, 60, 60);
   color: white;
   border: 2px solid rgb(133, 133, 133);
+}
+
+.show-hide-project-list-button-open {
+  margin-block-start: 100px;
+}
+
+.show-hide-project-list-button-closed {
+  margin-block-start: 0;
 }
 
 #footer {
