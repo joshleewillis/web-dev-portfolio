@@ -564,8 +564,18 @@ textarea:focus:invalid,
     height: 43.125rem; /* 690px; */
   }
 
-  .teased-tile {
-    height: 29.6875rem; /* 475px - exclude title and description */
+  /* Exclude list-container, title, and description for teased-tile in mobile/tablet views. */
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 18.125rem; /* 290px */
+  }
+
+  .teased-tile .list-container {
+    visibility: hidden;
+  }
+
+  .teased-tile .project-image {
+    height: 100%;
   }
 
   .image-and-list-container {
