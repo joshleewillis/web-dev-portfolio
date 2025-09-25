@@ -288,7 +288,7 @@ hr.rounded {
   opacity: 0.6;
 }
 
-.teased-tile .project-title,
+.teased-tile .project-title-anchor,
 .teased-tile .show-hide-description-button {
   visibility: hidden;
 }
