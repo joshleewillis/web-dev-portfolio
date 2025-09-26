@@ -651,6 +651,11 @@ textarea:focus:invalid,
     margin-inline-start: 0;
   }
 
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 14.0625rem; /* 225px */
+  }
+
   .list-container {
     padding-inline-end: 2%;
   }
@@ -703,6 +708,11 @@ textarea:focus:invalid,
 
   .header-photo, .footer-photo {
     width: 15.5rem; /* 248px - Same width as intro-link. */
+  }
+
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 9.375rem; /* 150px */
   }
 
   #skills-title {
