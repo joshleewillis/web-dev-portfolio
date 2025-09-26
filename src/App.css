@@ -744,3 +744,11 @@ textarea:focus:invalid,
     font-size: 1rem;
   }
 }
+
+/* 400px */
+@media screen and (max-width: 25rem) {
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 7.1875rem; /* 115px */
+  }
+}
