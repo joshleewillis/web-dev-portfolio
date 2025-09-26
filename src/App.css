@@ -564,7 +564,10 @@ textarea:focus:invalid,
     height: 43.125rem; /* 690px; */
   }
 
-  /* Exclude list-container, title, and description for teased-tile in mobile/tablet views. */
+  /* 
+    Exclude list-container, title, and description for teased-tile in mobile/tablet views.
+    Reduce height again at break points for 800px, 600px, and 400px. 
+  */
   .teased-tile,
   .teased-tile .image-and-list-container {
     height: 18.125rem; /* 290px */
