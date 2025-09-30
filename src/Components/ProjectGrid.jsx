@@ -157,6 +157,8 @@ export default function ProjectGrid() {
           <button 
             onClick={() => setShowAllTiles(!showAllTiles)} 
             className={showAllTiles ? "show-hide-project-list-button-open" : "show-hide-project-list-button-closed"}
+            aria-expanded={showAllTiles}
+            aria-controls="project-grid"
           >
             {showAllTiles ? 'Hide Projects' : 'Show All Projects'}
           </button>
