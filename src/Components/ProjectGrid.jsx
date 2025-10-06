@@ -42,6 +42,13 @@ export default function ProjectGrid() {
     });
   };
 
+  const toggleProjectGridExpansion = () => {
+    setShowAllTiles(!showAllTiles);
+
+    const orderSelect = document.getElementById('order-select');
+    orderSelect.focus({ preventScroll: true });
+  }
+
   return (
     <main>
       <section id="project-grid-container">
@@ -155,7 +162,7 @@ export default function ProjectGrid() {
         </div>
         <div className="show-hide-project-list-button-container">
           <button 
-            onClick={() => setShowAllTiles(!showAllTiles)} 
+            onClick={toggleProjectGridExpansion} 
             className={showAllTiles ? "show-hide-project-list-button-open" : "show-hide-project-list-button-closed"}
             aria-expanded={showAllTiles}
             aria-controls="project-grid"
