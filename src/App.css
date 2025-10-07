@@ -735,7 +735,9 @@ textarea:focus:invalid,
     align-items: flex-start;
   }
 
-  .project-title {
+  .project-title,
+  .show-hide-project-list-button-open,
+  .show-hide-project-list-button-closed {
     font-size: 1.25rem;
   }
 
