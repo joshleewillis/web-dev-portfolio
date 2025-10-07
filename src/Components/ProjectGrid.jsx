@@ -3,7 +3,7 @@ import projectArray from './ProjectArray.jsx';
 
 export default function ProjectGrid() {
   const [currentArray, setCurrentArray] = useState(projectArray);
-  const [expandedProjects, setExpandedProjects] = useState({}); // Track the expanded state of each project using an object.
+  const [expandedDescriptions, setExpandedDescriptions] = useState({}); // Track the expanded state of each project description using an object.
   const [isReversed, setIsReversed] = useState(false);
   const [showAllTiles, setShowAllTiles] = useState(false);
 
@@ -11,8 +11,8 @@ export default function ProjectGrid() {
   const displayedTiles = showAllTiles ? currentArray : currentArray.slice(0, teasedTileCount);
 
   // Toggle the expanded state for the clicked project.
-  const toggleExpanded = (projectId) => {
-    setExpandedProjects((prevState) => ({
+  const toggleExpandedDescription = (projectId) => {
+    setExpandedDescriptions((prevState) => ({
       ...prevState,
       [projectId]: !prevState[projectId] // Toggle the expanded state for the specific project.
     }));
@@ -71,7 +71,7 @@ export default function ProjectGrid() {
             displayedTiles.map((project) => (
               <div 
                 className={`
-                  ${expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
+                  ${expandedDescriptions[project.id] ? "project-tile" : "project-tile-hidden"} 
                   ${!showAllTiles && (project.id === 1 || project.id === currentArray.length - 2) ? 'teased-tile' : ''}
                 `} 
                 key={project.id}
@@ -140,18 +140,18 @@ export default function ProjectGrid() {
                 {/* Button to toggle the description */}
                 <button 
                   className="show-hide-description-button" 
-                  onClick={() => toggleExpanded(project.id)}
-                  aria-expanded={expandedProjects[project.id] || "false"}
+                  onClick={() => toggleExpandedDescription(project.id)}
+                  aria-expanded={expandedDescriptions[project.id] || "false"}
                   aria-controls={`project-desc-${project.id}`}
                 >
-                  {expandedProjects[project.id] ? 'Hide Description' : 'Show Description'}
+                  {expandedDescriptions[project.id] ? 'Hide Description' : 'Show Description'}
                 </button>
 
                 {/* Conditional rendering of the project description */}
-                {expandedProjects[project.id] && (
+                {expandedDescriptions[project.id] && (
                   <p
                     id={`project-desc-${project.id}`}
-                    className={expandedProjects[project.id] ? "project-description" : "project-description-hidden"}
+                    className={expandedDescriptions[project.id] ? "project-description" : "project-description-hidden"}
                   >
                     {project.description}
                   </p>
