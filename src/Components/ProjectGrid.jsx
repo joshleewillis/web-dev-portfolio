@@ -26,7 +26,7 @@ export default function ProjectGrid() {
     setTimeout(() => {
       projectGrid.classList.remove('project-grid-reversed');
     }, 1000);
-  }
+  };
 
   const toggleProjectGridOrder = () => {
     // Animate the project grid when it is reordered.
@@ -47,7 +47,7 @@ export default function ProjectGrid() {
 
     const orderSelect = document.getElementById('order-select');
     orderSelect.focus({ preventScroll: true });
-  }
+  };
 
   return (
     <main>
