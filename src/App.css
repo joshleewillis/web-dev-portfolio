@@ -573,12 +573,12 @@ textarea:focus:invalid,
     height: 18.125rem; /* 290px */
   }
 
-  .teased-tile .list-container {
-    visibility: hidden;
-  }
-
   .teased-tile .project-image {
     height: 100%;
+  }
+
+  .teased-tile .list-container {
+    visibility: hidden;
   }
 
   .image-and-list-container {
