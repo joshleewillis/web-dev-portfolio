@@ -548,7 +548,8 @@ textarea:focus:invalid,
     font-size: 2rem;
   }
 
-  #project-grid-heading {
+  #project-grid-heading, 
+  #footer {
     width: 90vw;
   }
 
@@ -593,10 +594,6 @@ textarea:focus:invalid,
 
   .list-container {
     height: 50%;
-  }
-
-  #footer {
-    width: 90vw;
   }
 }
 
