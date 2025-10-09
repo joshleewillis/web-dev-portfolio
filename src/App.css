@@ -673,6 +673,7 @@ textarea:focus:invalid,
   .footer-photo {
     margin-block-end: 20px;
     margin-inline-start: 0;
+    width: 50%;
   }
 }
 
