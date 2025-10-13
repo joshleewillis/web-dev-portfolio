@@ -255,7 +255,6 @@ hr.rounded {
   display: grid;
   justify-content: center;
   grid-template-columns: 70vw;
-  grid-auto-rows: 43.75rem; /* 700px; */
   row-gap: 100px;
 }
 
@@ -266,11 +265,11 @@ hr.rounded {
 .project-tile, .project-tile-hidden {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   gap: 0;
   margin: 0;
   border: 3px solid gray;
+  transition: height 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 .project-tile {
@@ -279,6 +278,29 @@ hr.rounded {
 
 .project-tile-hidden {
   height: 30.625rem; /* 490px; */
+}
+
+/* Exclude title and description when teased. */
+.teased-tile {
+  position: relative;
+  height: 17.8125rem; /* 285px */
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+.teased-tile .project-title-anchor,
+.teased-tile .show-hide-description-button {
+  visibility: hidden;
+}
+
+.teased-tile::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allow clicks through */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
 }
 
 .image-and-list-container {
@@ -387,6 +409,28 @@ a {
   height: 0; 
   visibility: hidden; 
   overflow: hidden; 
+}
+
+.show-hide-project-list-button-container {
+  text-align: center;
+}
+
+.show-hide-project-list-button-open,
+.show-hide-project-list-button-closed {
+  height: 3rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border: 2px solid rgb(133, 133, 133);
+}
+
+.show-hide-project-list-button-open {
+  margin-block-start: 100px;
+}
+
+.show-hide-project-list-button-closed {
+  margin-block-start: 0;
 }
 
 #footer {
@@ -504,13 +548,13 @@ textarea:focus:invalid,
     font-size: 2rem;
   }
 
-  #project-grid-heading {
+  #project-grid-heading, 
+  #footer {
     width: 90vw;
   }
 
   #project-grid {
     grid-template-columns: 90vw;
-    grid-auto-rows: 56.25rem; /* 900px; */
   }
 
   .project-tile {
@@ -519,6 +563,23 @@ textarea:focus:invalid,
   
   .project-tile-hidden {
     height: 43.125rem; /* 690px; */
+  }
+
+  /* 
+    Exclude list-container, title, and description for teased-tile in mobile/tablet views.
+    Reduce height again at break points for 800px, 600px, and 400px. 
+  */
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 18.125rem; /* 290px */
+  }
+
+  .teased-tile .project-image {
+    height: 100%;
+  }
+
+  .teased-tile .list-container {
+    visibility: hidden;
   }
 
   .image-and-list-container {
@@ -533,10 +594,6 @@ textarea:focus:invalid,
 
   .list-container {
     height: 50%;
-  }
-
-  #footer {
-    width: 90vw;
   }
 }
 
@@ -594,6 +651,11 @@ textarea:focus:invalid,
     margin-inline-start: 0;
   }
 
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 14.0625rem; /* 225px */
+  }
+
   .list-container {
     padding-inline-end: 2%;
   }
@@ -611,6 +673,7 @@ textarea:focus:invalid,
   .footer-photo {
     margin-block-end: 20px;
     margin-inline-start: 0;
+    width: 50%;
   }
 }
 
@@ -648,6 +711,11 @@ textarea:focus:invalid,
     width: 15.5rem; /* 248px - Same width as intro-link. */
   }
 
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 9.375rem; /* 150px */
+  }
+
   #skills-title {
     font-size: 3rem;
   }
@@ -665,7 +733,9 @@ textarea:focus:invalid,
     align-items: flex-start;
   }
 
-  .project-title {
+  .project-title,
+  .show-hide-project-list-button-open,
+  .show-hide-project-list-button-closed {
     font-size: 1.25rem;
   }
 
@@ -675,5 +745,13 @@ textarea:focus:invalid,
   
   #footer-text {
     font-size: 1rem;
+  }
+}
+
+/* 400px */
+@media screen and (max-width: 25rem) {
+  .teased-tile,
+  .teased-tile .image-and-list-container {
+    height: 7.1875rem; /* 115px */
   }
 }

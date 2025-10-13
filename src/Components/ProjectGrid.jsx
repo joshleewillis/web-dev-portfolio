@@ -2,14 +2,17 @@ import { useState } from 'react';
 import projectArray from './ProjectArray.jsx';
 
 export default function ProjectGrid() {
-  // Track the expanded state of each project using an object.
-  const [expandedProjects, setExpandedProjects] = useState({});
-  const [isReversed, setIsReversed] = useState(false);
   const [currentArray, setCurrentArray] = useState(projectArray);
+  const [expandedDescriptions, setExpandedDescriptions] = useState({}); // Track the expanded state of each project description using an object.
+  const [isReversed, setIsReversed] = useState(false);
+  const [showAllTiles, setShowAllTiles] = useState(false);
+
+  const teasedTileCount = 2;
+  const displayedTiles = showAllTiles ? currentArray : currentArray.slice(0, teasedTileCount);
 
   // Toggle the expanded state for the clicked project.
-  const toggleExpanded = (projectId) => {
-    setExpandedProjects((prevState) => ({
+  const toggleExpandedDescription = (projectId) => {
+    setExpandedDescriptions((prevState) => ({
       ...prevState,
       [projectId]: !prevState[projectId] // Toggle the expanded state for the specific project.
     }));
@@ -23,7 +26,7 @@ export default function ProjectGrid() {
     setTimeout(() => {
       projectGrid.classList.remove('project-grid-reversed');
     }, 1000);
-  }
+  };
 
   const toggleProjectGridOrder = () => {
     // Animate the project grid when it is reordered.
@@ -37,6 +40,13 @@ export default function ProjectGrid() {
 
       return newState;
     });
+  };
+
+  const toggleProjectGridExpansion = () => {
+    setShowAllTiles(!showAllTiles);
+
+    const orderSelect = document.getElementById('order-select');
+    orderSelect.focus({ preventScroll: true });
   };
 
   return (
@@ -58,9 +68,12 @@ export default function ProjectGrid() {
 
         <div id="project-grid">
           {
-            currentArray.map((project) => (
+            displayedTiles.map((project) => (
               <div 
-                className={expandedProjects[project.id] ? "project-tile" : "project-tile-hidden"} 
+                className={`
+                  ${expandedDescriptions[project.id] ? "project-tile" : "project-tile-hidden"} 
+                  ${!showAllTiles && (project.id === 1 || project.id === currentArray.length - 2) ? 'teased-tile' : ''}
+                `} 
                 key={project.id}
               >
                 <div className="image-and-list-container">
@@ -127,18 +140,18 @@ export default function ProjectGrid() {
                 {/* Button to toggle the description */}
                 <button 
                   className="show-hide-description-button" 
-                  onClick={() => toggleExpanded(project.id)}
-                  aria-expanded={expandedProjects[project.id] || "false"}
+                  onClick={() => toggleExpandedDescription(project.id)}
+                  aria-expanded={expandedDescriptions[project.id] || "false"}
                   aria-controls={`project-desc-${project.id}`}
                 >
-                  {expandedProjects[project.id] ? 'Hide Description' : 'Show Description'}
+                  {expandedDescriptions[project.id] ? 'Hide Description' : 'Show Description'}
                 </button>
 
                 {/* Conditional rendering of the project description */}
-                {expandedProjects[project.id] && (
+                {expandedDescriptions[project.id] && (
                   <p
                     id={`project-desc-${project.id}`}
-                    className={expandedProjects[project.id] ? "project-description" : "project-description-hidden"}
+                    className={expandedDescriptions[project.id] ? "project-description" : "project-description-hidden"}
                   >
                     {project.description}
                   </p>
@@ -146,7 +159,17 @@ export default function ProjectGrid() {
               </div>
             ))
           } 
-        </div>  
+        </div>
+        <div className="show-hide-project-list-button-container">
+          <button 
+            onClick={toggleProjectGridExpansion} 
+            className={showAllTiles ? "show-hide-project-list-button-open" : "show-hide-project-list-button-closed"}
+            aria-expanded={showAllTiles}
+            aria-controls="project-grid"
+          >
+            {showAllTiles ? 'Hide Projects' : 'Show All Projects'}
+          </button>
+        </div>
       </section>
     </main>
   );
