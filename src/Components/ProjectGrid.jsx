@@ -72,7 +72,7 @@ export default function ProjectGrid() {
               <div 
                 className={`
                   ${expandedDescriptions[project.id] ? "project-tile" : "project-tile-hidden"} 
-                  ${!showAllTiles && (project.id === 1 || project.id === currentArray.length - 2) ? 'teased-tile' : ''}
+                  ${!showAllTiles && (project.id === teasedTileCount - 1 || project.id === currentArray.length - 2) ? 'teased-tile' : ''}
                 `} 
                 key={project.id}
               >
